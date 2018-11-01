@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class firstScript {
-
 	@Test
 	public static void main(String[] args) throws InterruptedException {
 
@@ -17,11 +16,9 @@ public class firstScript {
 			cDriver.get("http://185.53.172.171/~littlestampco/");
 			cDriver.manage().timeouts().implicitlyWait(30,java.util.concurrent.TimeUnit.SECONDS);
 			cDriver.manage().window().maximize();
-			Thread.sleep(4000);
-									
+			Thread.sleep(4000);									
 		
-			//Valid User name passWord 
-			
+			//Valid User name passWord 			
 			
 			cDriver.findElement(By.xpath("//div[@class='panel header']//a[@title='Login'][contains(text(),'Login')]")).click();
 			cDriver.findElement(By.id("email")).sendKeys("ajay.g.vaghode@doyenhub.com");
